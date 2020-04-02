@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import LogAPI from "../../../repository/api/LogAPI";
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -13,8 +12,8 @@ class ErrorBoundary extends React.Component {
     this.setState({ hasError: true });
     const { playerName } = this.props;
     if (
-      process.env.REACT_APP_FRAME_C_BATTLE_ENV === "production" ||
-      process.env.REACT_APP_FRAME_C_BATTLE_ENV === "staging"
+      process.env.REACT_APP_FINAL_SEQUENCE_ENV === "production" ||
+      process.env.REACT_APP_FINAL_SEQUENCE_ENV === "staging"
     ) {
       //TODO: logをサーバにおくる
     }
