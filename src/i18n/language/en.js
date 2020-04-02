@@ -1,8 +1,7 @@
 export default {
   menu: {
-    kaimyou: "AI戒名",
-    funeral: "オンライン葬儀",
-    tomb: "オンライン墓地",
-    sutra: "オンラインお経"
+    kaimyou: "AI Post-mortem name",
+    funeral: "Online funeral",
+    tomb: "Online Tomb",
   }
 };
