@@ -22,7 +22,7 @@ const initialState = {
 
 const persistConfig = {
   key: `final-sequence`,
-  // blacklist: "intl.messages",
+  blacklist: "intl.messages",
   storage
 };
 
