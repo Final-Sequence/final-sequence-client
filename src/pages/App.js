@@ -1,16 +1,17 @@
-import React, { useEffect } from "react";
-import { BrowserRouter, Route, useLocation } from "react-router-dom";
-import { createGlobalStyle } from "styled-components";
+import React, {useEffect} from "react";
+import {BrowserRouter, Route, useLocation} from "react-router-dom";
+import {createGlobalStyle} from "styled-components";
 
 import ErrorBoundary from "../components/organisms/error/ErrorBoundary";
 import "semantic-ui-css/semantic.min.css"
 import ReactGA from "react-ga";
-import Home from "./home/Home";
+import Home from "./home/home";
+import LivingProof from "./livingProof/livingProof";
 
 if (process.env.REACT_APP_FINAL_SEQUENCE_ENV === "production") {
   ReactGA.initialize("UA-158112268-1");
   const path = window.location.pathname + window.location.search;
-  ReactGA.set({ page: path });
+  ReactGA.set({page: path});
   ReactGA.pageview(path);
 }
 const GlobalStyles = createGlobalStyle`
@@ -45,12 +46,12 @@ const GlobalStyles = createGlobalStyle`
     }
 `;
 
-const LocationListener = ({ children }) => {
+const LocationListener = ({children}) => {
   const location = useLocation();
 
   useEffect(() => {
     if (process.env.REACT_APP_FINAL_SEQUENCE_ENV === "production") {
-      ReactGA.set({ page: location.pathname });
+      ReactGA.set({page: location.pathname});
       ReactGA.pageview(location.pathname);
     }
   }, [location]);
@@ -62,10 +63,11 @@ const App = () => {
   return (
     <ErrorBoundary>
       <React.Fragment>
-        <GlobalStyles />
+        <GlobalStyles/>
         <BrowserRouter>
           <LocationListener>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/living-proof" component={LivingProof}/>
           </LocationListener>
         </BrowserRouter>
       </React.Fragment>

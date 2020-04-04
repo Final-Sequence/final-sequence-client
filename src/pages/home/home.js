@@ -3,11 +3,12 @@ import Header from "../../components/header/header";
 import Menu from "../../components/menu/menu";
 import {FormattedMessage} from "react-intl";
 import styled from "styled-components";
+import Footer from "../../components/footer/footer";
 
 
 const Home = () => {
   return (
-    <div className="App">
+    <div>
       <Header/>
       <Menu/>
       <div className="ui vertical striped segment">
@@ -28,9 +29,9 @@ const Home = () => {
               <img src="images/home/kaimyou_price.png" className="ui large bordered rounded image"/>
             </div>
             <div className="eight wide right floated column">
-              <h3 className="ui header"><FormattedMessage id="menu.tomb"/></h3>
-              <p><FormattedMessage id="home.tomb.description1"/></p>
-              <p><FormattedMessage id="home.tomb.description2"/></p>
+              <h3 className="ui header"><FormattedMessage id="menu.livingProof"/></h3>
+              <p><FormattedMessage id="home.livingProof.description1"/></p>
+              <p><FormattedMessage id="home.livingProof.description2"/></p>
             </div>
           </Row>
           <Row className="row">
@@ -44,9 +45,10 @@ const Home = () => {
             </div>
           </Row>
           <Title><h2 className="ui header"><FormattedMessage id="home.price"/></h2></Title>
-          <Row className="row">かんがえちゅう</Row>
+          <Row className="row"><img src="images/home/price.png"/></Row>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 };
