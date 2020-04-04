@@ -7,6 +7,7 @@ import "semantic-ui-css/semantic.min.css"
 import ReactGA from "react-ga";
 import Home from "./home/home";
 import LivingProof from "./livingProof/livingProof";
+import LivingProofDetail from "./livingProof/livingProofDetail";
 
 if (process.env.REACT_APP_FINAL_SEQUENCE_ENV === "production") {
   ReactGA.initialize("UA-158112268-1");
@@ -68,6 +69,7 @@ const App = () => {
           <LocationListener>
             <Route exact path="/" component={Home}/>
             <Route exact path="/living-proof" component={LivingProof}/>
+            <Route path="/living-proof/:id" component={LivingProofDetail}/>
           </LocationListener>
         </BrowserRouter>
       </React.Fragment>

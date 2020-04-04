@@ -26,7 +26,7 @@ class LivingProof extends React.Component {
         <div className="ui container">
           <div className="ui link cards">
             {livingProofs && livingProofs.map(livingProof => {
-              return <div className="card">
+              return <div className="card" key={livingProof.id} onClick={() => window.location.href=`/living-proof/${livingProof.id}`}>
                 <div className="image">
                   <img src={livingProof.faceImageURL}/>
                 </div>
@@ -35,13 +35,12 @@ class LivingProof extends React.Component {
                     {`${livingProof.name} (${livingProof.age})`}
                   </div>
                   <div className="meta">
-                    {livingProof.status}
+                    {livingProof.occupation}
                   </div>
                   <div className="description">
-                    {livingProof.description}
+                    {livingProof.motto}
                   </div>
                 </div>
-
               </div>
             })}
           </div>
