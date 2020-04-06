@@ -1,28 +1,44 @@
 import React from "react";
 import LanguageSelector from "./languageSelector";
 import styled from "styled-components";
+import {Link} from "react-router-dom";
+import {FormattedMessage} from "react-intl";
 
 const Header = () => (
   <div className="ui container">
     <TableContainer>
-      <MiddleItem>
-        <img src="/images/logos/logo.png" alt="logo"/>
-      </MiddleItem>
-      <RightItem><LanguageSelector/></RightItem>
+      <Link to="/">
+        <Title>
+          <img src="/images/logos/logo.png" alt="logo" className="ui image"/>
+        </Title>
+      </Link>
+      <RightItems>
+        <Link to="/#service>"><Black><FormattedMessage id="header.service"/></Black></Link>
+        <Link to="/#price>"><Black><FormattedMessage id="header.price"/></Black></Link>
+        <Link to="/#contact>"><Black><FormattedMessage id="header.contact"/></Black></Link>
+        <div style={{marginTop: "-0.15vw"}}><LanguageSelector/></div>
+      </RightItems>
     </TableContainer>
   </div>);
 
 const TableContainer = styled.div`
   display:flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 `;
-const MiddleItem = styled.div`
+const Title = styled.div`
   display: block;
+  width: 25vw;
+  margin-left: -2vw;
+`;
+const Black = styled.div`
+  color: black;
+  margin-right: 4vw;
 `;
 
-const RightItem = styled.div`
-  display: block;
+const RightItems = styled.div`
+  display: flex;
   text-align: right;
+  color: black;
 `;
 export default Header;

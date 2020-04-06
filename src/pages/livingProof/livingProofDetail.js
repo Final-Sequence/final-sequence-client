@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../../components/header/header";
-import Menu from "../../components/menu/menu";
 import {FormattedMessage} from "react-intl";
 import styled from "styled-components";
 import LivingProofAPI from "../../repository/api/livingProofAPI";
@@ -22,7 +21,6 @@ class LivingProofDetail extends React.Component {
     return (
       <div>
         <Header/>
-        <Menu/>
         <Innner className="ui container">
           <h1 className="ui header red">{livingProofDetail.name}<FormattedMessage id="livingProof.ownLivingProof"/></h1>
           <img src={livingProofDetail.faceImageURL} className="ui fluid image"/>

@@ -1,11 +1,19 @@
 export default {
+  header: {
+    service: "サービス",
+    price: "料金一覧",
+    contact: "お問い合わせ"
+  },
   menu: {
     kaimyou: "AI戒名",
     livingProof: "生きた証",
     funeral: "オンライン葬儀",
   },
   home: {
-    services: "サービス一覧",
+    subtitle: "残す、伝える",
+    seeSample: "サンプルを見る",
+    services: "サービス",
+    voice: "お客様の声",
     kaimyou: {
       description1: "AIによる機械学習であなたの戒名を決定します。",
       description2: "正式な戒名を取得するにはお坊さんに高額な報酬を支払う必要がありますが、AI戒名はどなたでも無料でお使いいただけます。"
@@ -18,7 +26,11 @@ export default {
       description1: "葬儀をオンライン上で行ったり、現実の葬儀をライブ中継したりします。",
       description2: "遠隔地の人の参加が容易になります。"
     },
-    price: "料金一覧"
+    price: "料金一覧",
+    customerMessage1:
+      `父の為に利用させていただきました。父も生きた証を後世に伝えられて大変喜んでおりました。ありがとうございました。`,
+    customer1:
+    `中嶋優希`
   },
   livingProof: {
     ownLivingProof: "さんの生きた証",

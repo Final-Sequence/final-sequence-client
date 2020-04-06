@@ -2,8 +2,10 @@ import React, {useEffect} from "react";
 import {BrowserRouter, Route, useLocation} from "react-router-dom";
 import {createGlobalStyle} from "styled-components";
 
-import ErrorBoundary from "../components/organisms/error/ErrorBoundary";
 import "semantic-ui-css/semantic.min.css"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import ErrorBoundary from "../components/organisms/error/ErrorBoundary";
 import ReactGA from "react-ga";
 import Home from "./home/home";
 import LivingProof from "./livingProof/livingProof";
@@ -24,8 +26,6 @@ const GlobalStyles = createGlobalStyle`
         sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      background-color: #fceadc;
-      font-size: 20px;
     }
     ::-webkit-scrollbar {
        width: 10px;
@@ -44,6 +44,9 @@ const GlobalStyles = createGlobalStyle`
     }
     select {
       width: 100%;
+    }
+    .slick-prev:before, .slick-next:before{
+      color: black;
     }
 `;
 

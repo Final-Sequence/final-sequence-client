@@ -1,7 +1,5 @@
 import React from "react";
 import Header from "../../components/header/header";
-import Menu from "../../components/menu/menu";
-import {FormattedMessage} from "react-intl";
 import styled from "styled-components";
 import LivingProofAPI from "../../repository/api/livingProofAPI";
 
@@ -22,7 +20,6 @@ class LivingProof extends React.Component {
     return (
       <div>
         <Header/>
-        <Menu/>
         <div className="ui container">
           <div className="ui link cards">
             {livingProofs && livingProofs.map(livingProof => {

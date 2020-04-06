@@ -15,8 +15,8 @@ const LanguageSelector = () => {
           }}
           value={locale}
         >
-          <option value="ja">&#x1F1EF;&#x1F1F5;日本語</option>
-          <option value="en">&#x1f1fa;&#x1f1f8;English</option>
+          <option value="ja">日本語</option>
+          <option value="en">English</option>
         </Select>
       </div>
     </Container>
@@ -30,7 +30,7 @@ const Container = styled.div`
 const Select = styled.select`
   background: none;
   border: none;
-  width: 10vw;
+  width: 6vw;
 `;
 
 export default LanguageSelector;
