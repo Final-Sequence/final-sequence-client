@@ -13,9 +13,9 @@ const Header = () => (
         </Title>
       </Link>
       <RightItems>
-        <Link to="/#service>"><Black><FormattedMessage id="header.service"/></Black></Link>
-        <Link to="/#price>"><Black><FormattedMessage id="header.price"/></Black></Link>
-        <Link to="/#contact>"><Black><FormattedMessage id="header.contact"/></Black></Link>
+        <Link to="/#service"><Black><FormattedMessage id="header.service"/></Black></Link>
+        <Link to="/#price"><Black><FormattedMessage id="header.price"/></Black></Link>
+        <Link to="/#contact"><Black><FormattedMessage id="header.contact"/></Black></Link>
         <div style={{marginTop: "-0.15vw"}}><LanguageSelector/></div>
       </RightItems>
     </TableContainer>

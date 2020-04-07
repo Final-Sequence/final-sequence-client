@@ -51,6 +51,7 @@ class LivingProofAPI {
     return {
       id: id,
       name: "塚原宥誼",
+      alphabet: "HIROYOSHI TSUKAHARA",
       faceImageURL: "https://final-sequence-test-resource.s3.ap-northeast-1.amazonaws.com/living-proof/persons/tsukahara.png",
       motto: "プロは言い分けは言わない",
       status: "存命",

@@ -61,11 +61,13 @@ export default {
     predictingDeathCause: "自分の死因予想",
     desiredOffering: "欲しいお供えBEST3",
     unneededOffering: "いらないお供えBEST3",
-    lifeChart: "人生の浮き沈みグラフ",
-    familyTree: "家系図",
     gallery: "ギャラリー",
     messageToFamily: "家族へのメッセージ",
     blog: "ブログ",
-    propose: "プロポーズの言葉"
+    propose: "プロポーズの言葉",
+    basicData: "基礎情報",
+    interview: "インタビュー",
+    lifeChart: "ライフチャート",
+    familyTree: "家系図"
   }
 };

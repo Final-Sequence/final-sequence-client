@@ -2,23 +2,20 @@ import React from "react";
 import styled from "styled-components";
 
 const Footer = () => (
-  <div className="ui  vertical footer segment">
-    <div className="ui container">
-      <div>©CHANT-THROUGH Ltd all right reserved</div>
+  <Container>
+    <div className="ui container center aligned">
+      <div style={{color: "#2C3882"}}>Copyright ©CHANT-THROUGH Ltd. All Right Reserved.</div>
     </div>
-  </div>);
+  </Container>);
 
-const TableContainer = styled.div`
-  display:flex;
+const Container = styled.div`
+  background-color: #E6CEBF;
+  height: 9vh;
+  display: flex;
   justify-content: center;
-  align-items: center;
-`;
-const MiddleItem = styled.div`
-  display: block;
+  align-items: flex-end;
+  padding-bottom: 1vh;
 `;
 
-const RightItem = styled.div`
-  display: block;
-  text-align: right;
-`;
+
 export default Footer;

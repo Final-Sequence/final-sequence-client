@@ -1,11 +1,19 @@
 export default {
+  header: {
+    service: "Service",
+    price: "Price",
+    contact: "Customer's contact"
+  },
   menu: {
-    kaimyou: "AI Post-mortem name",
+    kaimyou: "AI Postmortem name",
     livingProof: "Living Proof",
     funeral: "Online funeral",
   },
   home: {
-    services: "Service List",
+    subtitle: "Leave your thoughts",
+    seeSample: "See sample",
+    services: "Service",
+    voice: "Customer's voice",
     kaimyou: {
       description1: "Your post-mortem name is determined by machine learning AI.",
       description2: "You need to pay a lot of money to get your post-mortem name, but you can use it for free."
@@ -18,7 +26,11 @@ export default {
       description1: "We help to hold Online funeral, or also broadcasting it on live.",
       description2: "It makes it easier for people in remote areas to participate."
     },
-    price: "Price List"
+    price: "Price list",
+    customerMessage1:
+      `We used it for my father. My father was very happy to be able to pass on his living testimony to the next generation. Thank you very much.`,
+    customer1:
+      `Yuki Nakashima`
   },
   livingProof: {
     ownLivingProof: "'s LivingProof",
@@ -49,11 +61,13 @@ export default {
     predictingDeathCause: "Predicting one's own cause of death",
     desiredOffering: "Best 3 wanted offerings for tomb",
     unneededOffering: "Best 3 unneeded offerings for tomb",
-    lifeChart: "Life chart",
-    familyTree: "Family Tree",
     gallery: "Gallery",
     messageToFamily: "Message to Family",
     blog: "Blog",
-    propose: "Propose words"
+    propose: "Propose words",
+    basicData: "Basic information",
+    interview: "Interview",
+    lifeChart: "Life chart",
+    familyTree: "Family tree"
   }
 };

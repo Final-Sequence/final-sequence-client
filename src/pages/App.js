@@ -45,8 +45,13 @@ const GlobalStyles = createGlobalStyle`
     select {
       width: 100%;
     }
-    .slick-prev:before, .slick-next:before{
+    .slick-prev:before {
       color: black;
+      margin-left:-3vw;
+    }
+    .slick-next:before{
+      color: black;
+      margin-left: 3vw;
     }
 `;
 
