@@ -2,7 +2,7 @@ export default {
   header: {
     service: "Service",
     price: "Price",
-    contact: "Customer's contact"
+    contact: "Contact"
   },
   menu: {
     kaimyou: "AI Postmortem name",

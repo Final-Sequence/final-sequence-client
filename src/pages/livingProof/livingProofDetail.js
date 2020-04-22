@@ -13,8 +13,13 @@ class LivingProofDetail extends React.Component {
   }
 
   async componentDidMount() {
-    const livingProofDetail = await LivingProofAPI.fetchLivingProofDetail();
+    const livingProofDetail = await LivingProofAPI.fetchLivingProofDetail(this.livingProofId);
+    console.log(livingProofDetail)
     this.setState({livingProofDetail})
+  }
+
+  get livingProofId() {
+    return this.props.match.params.id;
   }
 
   render() {

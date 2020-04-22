@@ -15,7 +15,7 @@ const Header = () => (
       <RightItems>
         <Link to="/#service"><Black><FormattedMessage id="header.service"/></Black></Link>
         <Link to="/#price"><Black><FormattedMessage id="header.price"/></Black></Link>
-        <Link to="/#contact"><Black><FormattedMessage id="header.contact"/></Black></Link>
+        <a href="mailto:yushi812@gmail.com?subject=Final%20Sequence%20Contact"><Black><FormattedMessage id="header.contact"/></Black></a>
         <div style={{marginTop: "-0.15vw"}}><LanguageSelector/></div>
       </RightItems>
     </TableContainer>
