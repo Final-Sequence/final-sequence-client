@@ -5,11 +5,13 @@ import {createGlobalStyle} from "styled-components";
 import "semantic-ui-css/semantic.min.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 import ErrorBoundary from "../components/organisms/error/ErrorBoundary";
 import ReactGA from "react-ga";
 import Home from "./home/home";
 import LivingProof from "./livingProof/livingProof";
 import LivingProofDetail from "./livingProof/livingProofDetail";
+import TodoList from "./livingProof/TodoList";
 
 if (process.env.REACT_APP_FINAL_SEQUENCE_ENV === "production") {
   ReactGA.initialize("UA-158112268-1");
@@ -78,6 +80,7 @@ const App = () => {
             <Route exact path="/" component={Home}/>
             <Route exact path="/living-proof" component={LivingProof}/>
             <Route path="/living-proof/:id" component={LivingProofDetail}/>
+            <Route path="/todo-list/:id" component={TodoList}/>
           </LocationListener>
         </BrowserRouter>
       </React.Fragment>

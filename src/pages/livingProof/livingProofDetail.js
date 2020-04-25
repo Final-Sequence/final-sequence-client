@@ -4,6 +4,7 @@ import {FormattedMessage} from "react-intl";
 import styled from "styled-components";
 import LivingProofAPI from "../../repository/api/livingProofAPI";
 import Footer from "../../components/footer/footer";
+import TodoList from "./TodoList";
 
 
 class LivingProofDetail extends React.Component {
@@ -14,7 +15,6 @@ class LivingProofDetail extends React.Component {
 
   async componentDidMount() {
     const livingProofDetail = await LivingProofAPI.fetchLivingProofDetail(this.livingProofId);
-    console.log(livingProofDetail)
     this.setState({livingProofDetail})
   }
 
@@ -48,6 +48,8 @@ class LivingProofDetail extends React.Component {
             <img className="ui fluid image" src={livingProofDetail.lifeChartImageURL} alt="life chart"/>
             <HeaderBox><FormattedMessage id="livingProof.familyTree"/></HeaderBox>
             <img className="ui fluid image" src={livingProofDetail.familyTreeImageURL} alt="family tree"/>
+            <HeaderBox>TODO LIST</HeaderBox>
+            <TodoList/>
           </Innner>
         </Container>
         <Footer/>
