@@ -2,6 +2,7 @@ import React from "react";
 import LanguageSelector from "./languageSelector";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import {FormattedMessage} from "react-intl";
 
 const Header = () => (
@@ -13,8 +14,8 @@ const Header = () => (
         </Title>
       </Link>
       <RightItems>
-        <Link to="/#service"><Black><FormattedMessage id="header.service"/></Black></Link>
-        <Link to="/#price"><Black><FormattedMessage id="header.price"/></Black></Link>
+        <HashLink to="/#service"><Black><FormattedMessage id="header.service"/></Black></HashLink>
+        <HashLink to="/#price"><Black><FormattedMessage id="header.price"/></Black></HashLink>
         <a href="mailto:yushi812@gmail.com?subject=Final%20Sequence%20Contact"><Black><FormattedMessage id="header.contact"/></Black></a>
         <div style={{marginTop: "-0.15vw"}}><LanguageSelector/></div>
       </RightItems>
