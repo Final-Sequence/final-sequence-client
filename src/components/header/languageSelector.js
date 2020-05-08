@@ -2,6 +2,7 @@ import styled from "styled-components";
 import React from "react";
 import {useSelector} from "react-redux";
 import {changeLanguage} from "../../stores";
+import mediaQuery from "styled-media-query";
 
 const LanguageSelector = () => {
   const localeSelector = state => state.intl.locale;
@@ -23,6 +24,7 @@ const LanguageSelector = () => {
   );
 };
 
+const mediaMobile = mediaQuery.lessThan("medium");
 const Container = styled.div`
   margin-right: 3vw;
 `;
@@ -31,6 +33,7 @@ const Select = styled.select`
   background: none;
   border: none;
   width: 6vw;
+  ${mediaMobile`width: 20vw`}
 `;
 
 export default LanguageSelector;

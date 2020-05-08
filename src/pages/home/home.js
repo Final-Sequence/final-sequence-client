@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Footer from "../../components/footer/footer";
 import {Link} from "react-router-dom";
 import Slider from "react-slick"
+import mediaQuery from "styled-media-query";
 
 const Home = () => {
   const settings = {
@@ -21,7 +22,7 @@ const Home = () => {
   return (
     <div>
       <Header/>
-      <div className="ui middle aligned grid container">
+      <div className="ui middle stackable aligned grid container">
         <Row className="row" style={{marginLeft: "4vw"}}>
           <div className="six wide column">
             <Subtitle>
@@ -109,7 +110,7 @@ const Home = () => {
   )
 };
 
-
+const mediaMobile = mediaQuery.lessThan("medium");
 const Title = styled.div`
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -118,10 +119,15 @@ const Title = styled.div`
 `;
 const Subtitle = styled.div`
   font-size: 1.5rem;
+  ${mediaMobile
+  `margin-top: 3vh;
+   text-align:center;
+   `}
 `;
 const LivingProof = styled.div`
   font-size : 4rem;
   margin-top : 4vh;
+  ${mediaMobile`text-align:center;`}
 `;
 const SeeSample = styled.span`
   background-color: #2C3882;
@@ -131,6 +137,7 @@ const SeeSample = styled.span`
 `;
 const SeeSampleContainer = styled.div`
   margin-top: 5vh;
+  ${mediaMobile`text-align:center;`}
 `;
 const Row = styled.div`
   margin-top: 5vh;

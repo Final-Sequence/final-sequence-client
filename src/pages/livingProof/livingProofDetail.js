@@ -49,7 +49,6 @@ class LivingProofDetail extends React.Component {
             <HeaderBox><FormattedMessage id="livingProof.familyTree"/></HeaderBox>
             <img className="ui fluid image" src={livingProofDetail.familyTreeImageURL} alt="family tree"/>
             <HeaderBox>TODO LIST</HeaderBox>
-            <TodoList/>
           </Innner>
         </Container>
         <Footer/>
